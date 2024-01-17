@@ -1,0 +1,124 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+
+     
+}
+
+body{
+     background-image: url("blob-scene-haikei.svg");
+  background-size: cover; /* This property ensures the background image covers the entire container */
+  background-position: center; /* This property centers the background image within its container */
+  background-repeat: no-repeat; /* This property prevents the background image from repeating */
+     
+}
+
+.container{
+     width: 100%;
+     margin: auto;
+     padding: 0 46px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.form{
+     width: 500px;
+}
+
+form{
+     width: 100%;
+     /* max-width: 500px; */
+     background: rgba(255, 247, 247, 0.1);
+     backdrop-filter: blur(50px);
+     
+     margin: 60px auto;
+     padding: 30px 46px;
+     /* border: 2px solid #ccc; */
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+     display: flex;
+     flex-direction: column;
+}
+
+form h1{
+     text-align: center;
+     margin-bottom: 24px;
+     color: #ffffff;
+     font-weight: 100;
+     font-family: roboto;
+}
+
+input[type="text"],
+input[type="password"],
+select{
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 2px solid #ccc;
+     border-radius: 10px;
+     box-sizing: border-box;
+     background: none;
+     color: rgb(255, 255, 255);
+     font-family: roboto;
+     font-weight: 100;
+}
+
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder{
+     color: #ffffff;
+     font-family: roboto;
+     font-weight: 100;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus{
+     outline: none;
+     border: 2px solid #2d9c9c3b;
+     background: #aefcfc3b;
+     backdrop-filter: blur(50px);
+     color: #fff;
+     font-family: roboto;
+     font-weight: 100;
+}
+
+option{
+     background-color: rgb(255, 255, 255);
+     color: #15274e;
+     border-radius: 20px;
+     font-family: roboto;
+     /* font-weight: 100; */
+}
+input[type="submit"]{
+     width: 100%;
+     background: #97249b2d;
+     backdrop-filter: blur(50px);
+     color: #fff;
+     border: none;
+     padding: 12px 20px;
+     margin: 8px 0;
+     border-radius: 10px;
+     cursor: pointer;
+     font-size: 20px;
+     font-family: roboto;
+     font-weight: 100;
+}
+
+input[type="submit"]:hover{
+     background: #3c30683b;
+     backdrop-filter: blur(50px);
+     color: #fff;
+     border: none;
+     padding: 12px 20px;
+     margin: 8px 0;
+     border-radius: 10px;
+     cursor: pointer;
+     font-size: 20px;
+     font-family: roboto;
+     font-weight: 100;
+}
